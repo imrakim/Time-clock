@@ -7,7 +7,7 @@ function date() {
   sec = time.getSeconds();
 
   hr = hr > 12 ? hr - 12 : hr;
-  
+
   hr = hr < 10 ? "0" + hr : hr;
   mn = mn < 10 ? "0" + mn : mn;
   sec = sec < 10 ? "0" + sec : sec;
@@ -30,6 +30,8 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 updateTime();
+
+
 
 // from chat gpt
 
